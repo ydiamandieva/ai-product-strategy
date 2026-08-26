@@ -8,7 +8,7 @@
 <!-- v0 / Cursor / Lovable / other --> Lovable
 
 ## Prototype Link
-<!-- Paste the shareable URL --> https://lovable.dev/projects/24790dc9-e0b9-480a-bfb2-fa92e889f958?magic_link=mc_7c317833-cbb5-4803-a61c-5ff210b729ca
+<!-- Paste the shareable URL --> https://fleet-insight-copilot.lovable.app
 
 ## AI Value Archetype
 <!-- Automator / Copilot / Oracle / Creator / Orchestrator --> Operational Copilot — an AI assistant that augments fleet managers by interpreting proprietary operational data, prioritising what matters most, and accelerating trusted decision-making.
