@@ -28,7 +28,7 @@
 
 ---
 
-### Platform Exposure — 3/5
+### Platform Exposure — 4/5
 *Encroachment risk × pivot speed. If Apple/Google/OpenAI ships your hero feature native — then what?*
 
 **Score rationale:** The assistant benefits from advances in foundation models and cloud AI platforms without needing to build LLM technology itself. The architecture is deliberately modular (AWS Bedrock, interchangeable models), reducing vendor lock-in and allowing rapid adoption of model improvements. However, the strategy is still exposed to platform evolution because changes in model pricing, capabilities or APIs can influence costs and product behaviour. Furthermore, some conversational capabilities are becoming commoditised across Microsoft, Google and OpenAI ecosystems, meaning differentiation must continue to come from MyCF's proprietary data and workflows rather than the conversational interface itself.
