@@ -71,6 +71,7 @@ The percentage is lower than for frontier AI platforms because Microsoft would s
 *Your partner played the Big Tech attacker. What was their plan to kill you?*
 
 **Attacker:** OpenAI (ChatGPT Enterprise / Agents)
+
 <br>**Attack vector (target the weakest loop):** Preference Loop (2/5) - The AI Assistant has limited long-term memory of user and team preferences, making it relatively easy for users to switch to a more personalized AI experience without losing much accumulated value.
 
 <br>**Weeks 1-4 - what they ship:** Launch a native Fleet Operations Agent that connects to MyCF and other enterprise systems via APIs, enabling conversational fleet queries, report generation, and workflow automation directly inside ChatGPT.
