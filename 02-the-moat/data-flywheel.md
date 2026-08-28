@@ -42,26 +42,39 @@
 ## Encroachment Threat Assessment
 
 ### 1. Platform Encroachment
+
 **Attacker:** OpenAI
+
 **Vector:** Introduces native enterprise AI agents that connect directly to business systems, making conversational access to operational data, reporting, and workflow automation a built-in capability. OpenAI's advantage is rapid model innovation, a broad enterprise ecosystem, and the ability to integrate across many SaaS platforms, reducing the need for standalone conversational interfaces.
+
 **Time-to-threat:** 2-3 years
+
 **% of value at risk:** 50-70%
 
 This assessment reflects that OpenAI could commoditize much of the conversational layer, but it would still lack MyCF's proprietary fleet data, domain-specific reasoning, customer-specific operational context, and trusted, evidence-backed decision logic—the elements that create long-term differentiation.
 
 ### 2. Vertical Competitor
+
 **Attacker:** Fleetio AI (or an AI-native fleet operations startup focused on maintenance and fleet workflows)
+
 **Vector:** Builds deeper, workflow-specific AI for fleet operations (e.g. maintenance, inspections, compliance, and dispatch) using highly structured operational data and customer interactions that are richer within its niche than MyCF's broader fleet dataset.
+
 **Time-to-threat:** 2–3 years
+
 **% of value at risk:** 20–30%
 
 The rationale for the relatively lower percentage at risk is that while a vertical competitor can outperform MyCF in a specific workflow, it is less likely to replace the broader operational assistant embedded across all MyCF fleet management use cases. The risk is concentrated in the niche where they have superior proprietary data and workflow depth, rather than across the entire AI Assistant proposition.
 
 ### 3. Adjacent Expansion
+
 **Attacker:** Microsoft (Dynamics 365 + Copilot)
+
 **Vector:** Adds fleet management AI as another Copilot capability within an ecosystem customers already use daily for operations, field service, and business workflows. Its distribution advantage is an enormous installed enterprise customer base and seamless integration across Microsoft 365, Dynamics, Teams, and Power Platform. Microsoft also has access to rich enterprise data (work orders, CRM, ERP, communications, calendars, documents, and business processes) that MyCF does not.
+
 **Time-to-threat:** 2–4 years
+
 **% of value at risk:** 30–40%
+
 The percentage is lower than for frontier AI platforms because Microsoft would still need deep integrations with telematics providers like MyCF to deliver trusted fleet-specific insights. While it could commoditize the conversational interface and workflow orchestration, the proprietary fleet data, domain logic, and operational expertise remain MyCF's primary source of differentiation.
 
 ---
