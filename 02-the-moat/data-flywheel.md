@@ -62,8 +62,8 @@ The rationale for the relatively lower percentage at risk is that while a vertic
 **Vector:** Adds fleet management AI as another Copilot capability within an ecosystem customers already use daily for operations, field service, and business workflows. Its distribution advantage is an enormous installed enterprise customer base and seamless integration across Microsoft 365, Dynamics, Teams, and Power Platform. Microsoft also has access to rich enterprise data (work orders, CRM, ERP, communications, calendars, documents, and business processes) that MyCF does not.
 **Time-to-threat:** 2–4 years
 **% of value at risk:** 30–40%
-
 The percentage is lower than for frontier AI platforms because Microsoft would still need deep integrations with telematics providers like MyCF to deliver trusted fleet-specific insights. While it could commoditize the conversational interface and workflow orchestration, the proprietary fleet data, domain logic, and operational expertise remain MyCF's primary source of differentiation.
+
 ---
 
 ## 90-Day Encroachment Plan
