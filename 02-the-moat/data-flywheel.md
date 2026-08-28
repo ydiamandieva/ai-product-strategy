@@ -42,23 +42,26 @@
 ## Encroachment Threat Assessment
 
 ### 1. Platform Encroachment
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** OpenAI
+**Vector:** 1. Natural language querying of operational data; 2. Report summarisation; 3. Conversational dashboards; 4. General workflow assistance; 5. Generic agent orchestration
+**Time-to-threat:** 2-3 years
+**% of value at risk:** 50-70%
 
 ### 2. Vertical Competitor
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** Fleetio AI (or an AI-native fleet operations startup focused on maintenance and fleet workflows)
+**Vector:** Builds deeper, workflow-specific AI for fleet operations (e.g. maintenance, inspections, compliance, and dispatch) using highly structured operational data and customer interactions that are richer within its niche than MyCF's broader fleet dataset.
+**Time-to-threat:** 2–3 years
+**% of value at risk:** 20–30%
+
+The rationale for the relatively lower percentage at risk is that while a vertical competitor can outperform MyCF in a specific workflow, it is less likely to replace the broader operational assistant embedded across all MyCF fleet management use cases. The risk is concentrated in the niche where they have superior proprietary data and workflow depth, rather than across the entire AI Assistant proposition.
 
 ### 3. Adjacent Expansion
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** Microsoft (Dynamics 365 + Copilot)
+**Vector:** Adds fleet management AI as another Copilot capability within an ecosystem customers already use daily for operations, field service, and business workflows. Its distribution advantage is an enormous installed enterprise customer base and seamless integration across Microsoft 365, Dynamics, Teams, and Power Platform. Microsoft also has access to rich enterprise data (work orders, CRM, ERP, communications, calendars, documents, and business processes) that MyCF does not.
+**Time-to-threat:** 2–4 years
+**% of value at risk:** 30–40%
 
+The percentage is lower than for frontier AI platforms because Microsoft would still need deep integrations with telematics providers like MyCF to deliver trusted fleet-specific insights. While it could commoditize the conversational interface and workflow orchestration, the proprietary fleet data, domain logic, and operational expertise remain MyCF's primary source of differentiation.
 ---
 
 ## 90-Day Encroachment Plan
