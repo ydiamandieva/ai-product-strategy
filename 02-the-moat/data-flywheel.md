@@ -19,17 +19,21 @@
 
 ### Preference Loop - 2/5
 **What you capture today:** Limited user preferences are captured, with little persistence across sessions or teams.
+
 **How it compounds:** Personalization is mostly static, so user interactions generate limited cumulative value over time.
 
 ### Domain Context Loop - 3/5
 **What you capture today:** Knowledge and signals are reused within related product domains where shared data exists.
+
 **How it compounds:** Learning from one operational area improves performance in adjacent use cases where underlying data overlaps.
 
 ### Network Loop - 3/5
 **What you capture today:** Aggregate usage patterns across customers inform improvements to common AI capabilities.
+
 **How it compounds:** Insights from multiple customers strengthen generic capabilities, although organization-specific learning remains largely isolated.
 
 **Total Flywheel Score: 11/20**
+
 **Weakest Loop:** Preferences Loop scored lowest (2/5). That is where a competitor will probe first, shore up capture, feedback, or proprietary data there before we scale distribution.
 **Fix for weakest loop:**
 
