@@ -43,9 +43,11 @@
 
 ### 1. Platform Encroachment
 **Attacker:** OpenAI
-**Vector:** 1. Natural language querying of operational data; 2. Report summarisation; 3. Conversational dashboards; 4. General workflow assistance; 5. Generic agent orchestration
+**Vector:** Introduces native enterprise AI agents that connect directly to business systems, making conversational access to operational data, reporting, and workflow automation a built-in capability. OpenAI's advantage is rapid model innovation, a broad enterprise ecosystem, and the ability to integrate across many SaaS platforms, reducing the need for standalone conversational interfaces.
 **Time-to-threat:** 2-3 years
 **% of value at risk:** 50-70%
+
+This assessment reflects that OpenAI could commoditize much of the conversational layer, but it would still lack MyCF's proprietary fleet data, domain-specific reasoning, customer-specific operational context, and trusted, evidence-backed decision logic—the elements that create long-term differentiation.
 
 ### 2. Vertical Competitor
 **Attacker:** Fleetio AI (or an AI-native fleet operations startup focused on maintenance and fleet workflows)
