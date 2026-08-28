@@ -71,8 +71,13 @@ The percentage is lower than for frontier AI platforms because Microsoft would s
 *Your partner played the Big Tech attacker. What was their plan to kill you?*
 
 **Attacker:** OpenAI (ChatGPT Enterprise / Agents)
-**Attack vector (target the weakest loop):** Preference Loop (2/5): The AI Assistant has limited long-term memory of user and team preferences, making it relatively easy for users to switch to a more personalized AI experience without losing much accumulated value.
-**Weeks 1-4 - what they ship:** Launch a native Fleet Operations Agent that connects to MyCF and other enterprise systems via APIs, enabling conversational fleet queries, report generation, and workflow automation directly inside ChatGPT.
-**Weeks 5-8 - how they poach users:** Provide one-click integration, free migration for early adopters, and a superior personalized experience that remembers user preferences, works across multiple business applications, and becomes the default interface for daily operational work.
-**Weeks 9-12 - why users don't come back:** Users become accustomed to a single AI assistant that orchestrates work across their enterprise systems rather than only within MyCF. Their saved preferences, custom workflows, and embedded daily habits create switching costs, while MyCF is perceived as just another data source.
-**Your defense:** Strengthen the flywheel where OpenAI cannot compete: build proprietary fleet intelligence rather than a better chat interface. Invest in customer-specific operational memory, evidence-backed recommendations, closed-loop learning from fleet outcomes, and workflow execution that continuously improves from MyCF's unique telematics data. The objective is to make the AI Assistant indispensable because of what it knows about each fleet, not because of how users converse with it.
+**Attack vector (target the weakest loop):
+** Preference Loop (2/5): The AI Assistant has limited long-term memory of user and team preferences, making it relatively easy for users to switch to a more personalized AI experience without losing much accumulated value.
+**Weeks 1-4 - what they ship:
+** Launch a native Fleet Operations Agent that connects to MyCF and other enterprise systems via APIs, enabling conversational fleet queries, report generation, and workflow automation directly inside ChatGPT.
+**Weeks 5-8 - how they poach users:
+** Provide one-click integration, free migration for early adopters, and a superior personalized experience that remembers user preferences, works across multiple business applications, and becomes the default interface for daily operational work.
+**Weeks 9-12 - why users don't come back:
+** Users become accustomed to a single AI assistant that orchestrates work across their enterprise systems rather than only within MyCF. Their saved preferences, custom workflows, and embedded daily habits create switching costs, while MyCF is perceived as just another data source.
+**Your defense:
+** Strengthen the flywheel where OpenAI cannot compete: build proprietary fleet intelligence rather than a better chat interface. Invest in customer-specific operational memory, evidence-backed recommendations, closed-loop learning from fleet outcomes, and workflow execution that continuously improves from MyCF's unique telematics data. The objective is to make the AI Assistant indispensable because of what it knows about each fleet, not because of how users converse with it.
