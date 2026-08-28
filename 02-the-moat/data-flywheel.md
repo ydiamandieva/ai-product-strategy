@@ -14,6 +14,7 @@
 
 ### Correction Loop - 3/5
 **What you capture today:** User feedback and corrections are captured for selected workflows, but not consistently across all interactions.
+
 **How it compounds:** Captured feedback supports periodic improvements to prompts, rules, or models, but is not automatically fed back into learning.
 
 ### Preference Loop - 2/5
