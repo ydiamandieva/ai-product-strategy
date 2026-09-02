@@ -4,38 +4,47 @@
 
 | Cost Category | Per-User/Month | Notes |
 |--------------|----------------|-------|
-| Inference (primary model) | | |
-| Inference (cascading/triage) | | |
-| Infrastructure | | |
-| Data/storage | | |
-| Human-in-the-loop | | |
-| **Total AI COGS** | | |
+| Inference (primary model) | £1.44 | Frontier-model requests requiring complex reasoning, synthesis or higher-confidence responses. Assumes ~40% of requests at ~£0.09/request. |
+| Inference (cascading/triage) | £0.96 | Lower-cost model handles simpler requests and performs routing/triage. Assumes ~60% of requests at ~£0.04/request. |
+| Infrastructure | £4.00 | Allocated AWS compute, orchestration, APIs, observability and supporting platform services. |
+| Data/storage | £2.00 | Retrieval, vector/data storage, logging and processing required to ground answers in MyCF data. |
+| Human-in-the-loop | £2.00 | Allocated cost of evaluation, quality review, exception handling and operational oversight. |
+| **Total AI COGS** | £10.40 | £2.40 inference + £8.00 supporting/non-inference COGS per active user/month. |
+
+Base economics: £50 revenue/user/month − £10.40 COGS = £39.60 gross profit/user/month, equivalent to a 79.2% gross margin.
 
 ## Cascading Strategy
 <!-- Cheap model → frontier model routing logic -->
 
-**Triage model:**
-**Frontier model:**
-**Routing rule:**
-**Expected cascade ratio:**
+**Triage model:** Lower-cost, lower-latency model for intent classification, straightforward retrieval and routine operational questions.
+**Frontier model:** Higher-capability model reserved for complex reasoning, multi-source synthesis, ambiguous queries and requests requiring stronger contextual interpretation.
+**Routing rule:** Route to the lowest-cost model capable of meeting the required quality and confidence threshold. Escalate to the frontier model when complexity, ambiguity, multi-step reasoning or evaluation thresholds indicate that the triage path is insufficient.
+**Expected cascade ratio:** 60% triage / 40% frontier, with a target to progressively increase the proportion safely handled by lower-cost models as routing and evaluation maturity improve.
 
 ## Pricing Model
 
-**Current pricing:**
-**Proposed AI pricing:**
-**Model:** seat-based / usage-based / outcome-based / hybrid
+**Current pricing:** AI Assistant is embedded within the existing MyCF proposition rather than monetised as a standalone AI SKU.
+
+**Proposed AI pricing:** Initially retain AI Assistant within the core MyCF proposition to accelerate adoption and prove measurable retention and engagement value. Introduce premium pricing only for advanced/high-cost capabilities or materially higher usage tiers once willingness-to-pay and incremental customer value are evidenced.
+
+**Model:** platform entitlement for core AI capabilities, with premium/usage-based economics for advanced or unusually compute-intensive capabilities.
+
+The objective is to price against customer value while controlling exposure to variable inference costs, rather than simply passing token costs through to customers.
+
 
 ## Stress Tests
 
 | Scenario | Impact on Margin | Response |
 |----------|-----------------|----------|
-| Inference costs 3x | | |
-| Heaviest segment doubles | | |
-| Model provider raises prices 50% | | |
+| Inference costs 3x | Inference rises from £2.40 to £7.20/user/month. Total COGS rises to £15.20, reducing gross margin from 79.2% → 69.6%. | Increase cascading to lower-cost models, optimise prompts/context, cache repeatable outputs and renegotiate/provider-route workloads. No immediate pricing intervention required. |
+| Heaviest segment doubles | At 80 requests/month, inference rises from £2.40 to £4.80. Assuming non-AI COGS remains £8, total COGS becomes £12.80, reducing margin to 74.4%. | Introduce fair-use thresholds and route high-volume/simple requests aggressively to lower-cost models. Consider premium usage tiers if sustained heavy usage correlates with measurable customer value. |
+| Model provider raises prices 50% | Inference increases from £2.40 to £3.60. Total COGS becomes £11.60, reducing gross margin to 76.8%. | Shift traffic through the abstraction/routing layer to alternative providers/models, benchmark quality through evals and preserve the ability to swap providers without changing the customer proposition. |
 
 ## Board One-Pager
 <!-- Before/After: Old SaaS revenue vs. AI usage revenue for your product -->
 
-**Before (traditional SaaS):**
-**After (AI-enabled):**
-**Net margin shift:**
+**Before (traditional SaaS):** 84.0% gross margin — £50 revenue/user/month against £8.00 non-AI COGS.
+**After (AI-enabled):** 79.2% gross margin — £50 revenue/user/month against £10.40 total COGS, including £2.40 of incremental inference cost.
+**Net margin shift:** −4.8 percentage points of gross margin, or £2.40 incremental COGS/user/month.
+
+The investment case is therefore not that AI improves unit margin directly. The strategic case is that a controlled 4.8-point margin investment makes MyCF more valuable and embedded in customers' operational workflows, increasing engagement, retention and ultimately customer lifetime value. The economics remain attractive provided the incremental retention/expansion value generated by AI exceeds the £28.80 annual incremental AI inference cost per active user.
