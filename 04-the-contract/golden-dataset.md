@@ -25,16 +25,6 @@
 
 ## Confidence UX Design
 
-**Approach:** show uncertainty / tiered confidence / human-in-loop trigger
-
-**High confidence (>90%):**
-**Medium confidence (70-90%):**
-**Low confidence (<70%):**
-
-**User control surface:**
-
-## Confidence UX Design
-
 **Approach:** For the MyCF AI Assistant, I’d combine all three mechanisms: show uncertainty + tiered confidence + human-in-the-loop/escalation triggers. The governing principle should be: the lower the confidence, the less authoritative the Assistant becomes and the more control shifts to the user.
 
 **Confident (>90%):** AI Behaviour: Give a direct, actionable answer grounded in trusted MyCF/approved data. 
