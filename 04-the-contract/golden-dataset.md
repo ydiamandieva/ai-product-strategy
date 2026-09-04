@@ -52,15 +52,6 @@ One additional design principle for the AI Assistant: confidence should be deriv
 
 | Metric | Target | Measurement | Alert Threshold |
 |--------|--------|-------------|-----------------|
-| Accuracy | | | |
-| Hallucination rate | | | |
-| Latency (p95) | | | |
-| Drift velocity | | | |
-
-## Reliability Contract
-
-| Metric | Target | Measurement | Alert Threshold |
-|--------|--------|-------------|-----------------|
 | Accuracy | ≥92% weekly on the production-representative golden dataset | automated weekly golden-set eval using LLM-as-judge + deterministic rules for factual grounding, citation validity, access control and structured outputs. | <90% weekly, or >3pp deterioration vs. previous validated baseline → trigger gold-set audit |
 | Hallucination rate | <1% | Weekly golden-set/adversarial evaluation + production sampling, checking every factual claim against trusted MyCF/approved sources. | ≥1% warning; ≥2% critical → trigger gold-set audit |
 | Latency (p95) | <2 seconds p95 for standard conversational answers | Continuous production telemetry across end-to-end request latency and component-level timings (retrieval, tools/APIs, LLM generation). | p95 >3s for 15 min; critical at >5s. → page on-call |
@@ -73,9 +64,6 @@ One additional design principle for the AI Assistant: confidence should be deriv
 **Reviewer:** Route according to failure type: Product/AI team for answer-quality and UX issues; Data/Domain SME for fleet/domain correctness; Engineering/Data Science for systemic model, retrieval or tooling failures; Security/Privacy for access-control or sensitive-data cases.
 
 **Feedback loop:** Yes, but through validation rather than directly into production. Human corrections are captured with the original query, context, answer, evidence, failure classification and corrected answer. Validated/high-value cases are promoted into the golden dataset and adversarial set, then used in regression evals before subsequent model/prompt/RAG releases. Recurring failures inform product, retrieval and model improvements.
-
-## HITL Architecture
-<!-- When does a human step in? What's the escalation path? -->
 
 ## Red-Team Findings
 *What failure mode did your partner find that you missed?*
