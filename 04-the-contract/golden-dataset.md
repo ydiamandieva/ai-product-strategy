@@ -33,6 +33,31 @@
 
 **User control surface:**
 
+## Confidence UX Design
+
+**Approach:** For the MyCF AI Assistant, I’d combine all three mechanisms: show uncertainty + tiered confidence + human-in-the-loop/escalation triggers. The governing principle should be: the lower the confidence, the less authoritative the Assistant becomes and the more control shifts to the user.
+
+**Confident (>90%):** AI Behaviour: Give a direct, actionable answer grounded in trusted MyCF/approved data. 
+UI + copy: “High confidence” with supporting evidence/source references. Clear answer first; no unnecessary caveats.
+
+**Uncertain (50-90%):** AI behaviour: Answer, but visibly communicate uncertainty and avoid presenting inference as fact.
+UI + copy: “This answer has some uncertainty.” Visually soften the result; explain the main uncertainty driver, e.g. “Vehicle data is incomplete for 8% of the selected fleet.”
+
+**Not confident (<50%):** AI behaviour: Do not provide an authoritative operational answer. Block rather than guess.
+UI + copy: “I don’t have enough reliable information to answer this confidently.” Explain why: insufficient data, conflicting sources, unsupported request, etc.
+
+**User control surface:** 
+
+Tiered confidence + visible uncertainty + human-in-the-loop at the failure boundary.
+The important distinction is that confidence should not just change a badge - it should change product behaviour. Above 90%, the Assistant can be concise and authoritative because the answer is evidence-backed. Between 50–90%, it remains useful but explicitly surfaces uncertainty and its drivers. Below 50%, it should fail safely rather than hallucinate, explain what prevents a reliable answer, and give the user a clear recovery path.
+One additional design principle for the AI Assistant: confidence should be derived from observable reliability signals—not simply the LLM saying how confident it feels. Useful inputs include retrieval quality, source coverage, data completeness/freshness, conflicting evidence, and performance against the golden dataset.
+
+- Users see AI reasoning / drivers
+- Users correct & override outputs
+- Corrections feed back into the model / dataset
+- Users adjust the confidence threshold _(not yet)_
+
+
 ## Reliability Contract
 
 | Metric | Target | Measurement | Alert Threshold |
