@@ -126,7 +126,7 @@ Accept bespoke Zapier/Make workflows and niche external AI use cases where frequ
 - Estimated adjacent spend: $2030/mo across surveyed users.
 - Dominant signal: Workflow gap.
 
-Recommended next step: Workflow gaps dominate, your users are stitching your product into multi-step pipelines. Strongest near-term move is partner integrations with the AI tools they already chain in.
+Next step: Workflow gaps dominate, the AI Assistant users are stitching the product into multi-step pipelines. Strongest near-term move is partner integrations with the AI tools they already chain in.
 
 Sequence the Build column by frequency × strategic relevance. Confirm Partner candidates with the external tools' partnership teams. Re-run this audit each quarter, workarounds shift fast.
 
