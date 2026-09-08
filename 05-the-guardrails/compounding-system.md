@@ -92,19 +92,43 @@ User → AI Assistant → authorised retrieval/RAG → MyCF data/services → ev
 If/When we later introduce agents capable of invoking tools or changing state, agent topology becomes mandatory. Each agent should then have an explicit tool allowlist, data scope, action boundary, approval owner and audit trail.
 
 
+## Shadow AI Audit (user-side), Module 5
 
-## Shadow AI Audit
+## Discover, User-Side Workarounds
+- Export MyCF data → ChatGPT/Copilot for deeper analysis, summaries or follow-up questions | source: User interview | signal: Capability gap | freq: H | spend: $~$20–30/user/mo | decision: Build
+- Copy AI Assistant output/data → Excel/Power BI to manipulate, compare and create management reports | source: User interview | signal: Workflow gap | freq: H | spend: $Existing enterprise spend/mo | decision: Build
+- Copy insight → email/Teams/Slack to communicate or trigger follow-up with colleagues | source: User interview | signal: Workflow gap | freq: H | spend: $Existing enterprise spend/mo | decision: Partner
+- Use external AI to combine MyCF information with other business data — e.g. ERP, maintenance, fuel or operational datasets | source: API pattern | signal: Capability gap | freq: M | spend: $variable/mo | decision: Partner
+- Manually verify AI answers against dashboards/reports before acting | source: User interview | signal: Trust gap | freq: H | spend: $$0, but high time cost/mo | decision: Build
+- Use Zapier/Make/API scripts to turn an insight into an operational workflow | source: API pattern | signal: Workflow gap | freq: M | spend: $variable/mo | decision: Partner
 
-| Tool | Owner | Risk Level | Decision |
-|------|-------|-----------|----------|
-| | | H / M / L | keep / govern / kill |
-| | | H / M / L | keep / govern / kill |
-| | | H / M / L | keep / govern / kill |
+## Pattern Assessment
+- Workarounds found: 6
+- Build candidates: 3
+- Partner candidates: 3
+- Ignore decisions: 0
+- Adjacent spend: $2030/mo
+- Dominant signal: Workflow gap
 
-**Total tools found:**
-**Tools after triage:**
-**Estimated hidden spend:**
+## Action Plan
+### Build
+Prioritise capabilities that strengthen MyCF's proprietary advantage: follow-up/deeper analysis, evidence and verification, comparisons, reusable analysis/reporting, and eventually safe in-product operational workflows. These improve the core Assistant and deepen the contextual moat.
 
+### Partner
+Integrate where the destination already owns the workflow: Teams/Slack/email for collaboration; Power BI/Excel where sophisticated analysis or presentation is required; and selected enterprise systems/APIs where customers need MyCF intelligence combined with external operational data. Don't build another collaboration suite or BI platform.
+
+### Ignore + Monitor
+Accept bespoke Zapier/Make workflows and niche external AI use cases where frequency is low and customer-specific. Instrument API usage and discovery interviews to see whether multiple customers independently converge on the same workaround. Repeated convergence is the trigger to reconsider build/partner.
+
+## Roadmap Brief
+- Based on your audit: 6 user-side workarounds discovered.
+- Decisions: 3 build · 3 partner · 0 ignore · 0 TBD.
+- Estimated adjacent spend: $2030/mo across surveyed users.
+- Dominant signal: Workflow gap.
+
+Recommended next step: Workflow gaps dominate, your users are stitching your product into multi-step pipelines. Strongest near-term move is partner integrations with the AI tools they already chain in.
+
+Sequence the Build column by frequency × strategic relevance. Confirm Partner candidates with the external tools' partnership teams. Re-run this audit each quarter, workarounds shift fast.
 
 
 <!-- Governance Policy, AI Assistant -->
