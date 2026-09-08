@@ -43,17 +43,55 @@ Therefore, the current compounding architecture needs to be described as 1 emerg
 
 **Where it silos:** Customer feedback, corrections, failure patterns and domain expertise remain fragmented across teams and use cases, with no systematic mechanism to turn them into reusable context.
 
-
 ## Governance Policy
 
-**Scope:**
-**Autonomy boundaries:**
-**Escalation triggers:**
-**Audit cadence:**
-**Regulatory exposure (EU AI Act / other):**
+**Scope:** The policy governs the AI Assistant's use of MyCF customer and fleet data to answer authenticated user questions, generate fleet insights and recommendations, retrieve and synthesise authorised information, and explain the evidence supporting its answers.
+It covers:
+- LLM inference, prompting, RAG and retrieval.
+- Data access and authorisation enforcement.
+- Answer generation, confidence handling and citations/evidence.
+- User feedback, corrections and human escalation.
+- Model/provider changes and AI releases.
+- Logging, monitoring, evaluation and incident response.
+- Any future tool use or agentic capabilities exposed through the Assistant. Excludes: Core MyCF functionality outside the AI Assistant; underlying source-system data governance already governed by existing MCF policies; internal experimentation not exposed to customers; and autonomous operational actions until separately risk-assessed and explicitly approved.
+
+**Autonomy boundaries:** Answer a standard fleet question using data the authenticated user is authorised to access, auto. Generate non-binding insight or recommendation, auto. Answer when evidence is incomplete, conflicting, below confidence threshold or outside supported scope, human approval required. Execute a consequential customer action — e.g. change configuration, contact drivers, modify fleet records or initiate a workflow, human approval required. Override permissions, expose unauthorised customer data, make legal/compliance determinations or autonomously take safety-critical action, never auto.
+
+**Escalation triggers:** The Assistant must fail safely, request clarification, refuse or route to human review when any defined trigger occurs: 1. Confidence <50% or the agreed low-confidence threshold. 2. No authoritative evidence can be retrieved for a factual fleet-specific claim. 3. Retrieved sources are conflicting, stale or materially incomplete. 4. Request would require data outside the authenticated user's authorised scope. 5. Potential cross-customer data leakage or access-control anomaly is detected. 6. Request involves legal, regulatory, privacy, safety or other consequential interpretation beyond the Assistant's approved scope. 7. User asks the Assistant to perform an action classified as human-approval required. 8. Prompt-injection, jailbreak, anomalous retrieval or suspected security behaviour is detected. 9. Production hallucination/error thresholds defined in the Reliability Contract are breached. 10. A user explicitly challenges the accuracy of an answer or requests human review. For security/privacy triggers, escalation should not simply mean "show a human": stop the affected operation, preserve audit evidence and invoke the relevant security/incident process.
+
+**Audit cadence:** Real-time, Access-control violations, security events, prompt-injection signals, provider/service failures and critical reliability thresholds (Security / Platform Engineering owner). Daily, Production health: failures, refusals, latency, token/cost anomalies and critical user-reported answer issues (AI Engineering owner). Weekly, Accuracy, hallucination rate, low-confidence rate and golden-dataset/eval performance; sample production conversations and corrections (AI Product Manager). Monthly, Drift, recurring failure categories, domain coverage, escalation trends and unresolved reliability risks (Head of Data Science / AI). Quarterly, Governance policy, vendor/model risk, privacy/security controls, autonomy boundaries, regulatory exposure and material architecture changes (CISO + DPO + Product Leadership).
+
+**Regulatory exposure (EU AI Act / other):** Primary governance should account for GDPR / UK GDPR and Data Protection Act 2018, the EU AI Act where the Assistant falls within its territorial scope, contractual/customer data-processing obligations, information-security requirements, and relevant MCF/Michelin enterprise security and AI governance policies.. Risk tier: limited. Controls: Based on the current described use case, I would not label the Assistant high-risk by default: it supports authenticated fleet users with information and operational insights rather than autonomously making decisions in one of the AI Act's specified high-risk areas. However, classification must be reassessed whenever scope or autonomy expands.
+
+**Controls in Place**
+- RBAC and authenticated-user access enforced before retrieval, not by the LLM.
+- Customer/tenant data isolation.
+- Data minimisation and purpose limitation.
+- Approved model/provider and data-processing controls.
+- Encryption in transit and at rest.
+- Evidence-backed responses and source traceability.
+- Confidence thresholds and safe failure behaviour.
+- Human oversight for consequential actions.
+- Prompt-injection and data-exfiltration protections.
+- Production logging and auditable decision/action records.
+- Golden-dataset regression evaluation before material releases.
+- Defined retention/deletion rules for prompts, responses and feedback.
+- DPIA/security assessment where required.
+- Incident response and rollback mechanisms.
+- Periodic regulatory and model-risk reassessment.
+
 
 ## Agent Topology
-<!-- If using agents: what can each agent do? What can't it do? Who approves what? -->
+
+Not applicable yet.
+
+The current architecture is better governed as:
+
+User → AI Assistant → authorised retrieval/RAG → MyCF data/services → evidence-backed response → user
+
+If/When we later introduce agents capable of invoking tools or changing state, agent topology becomes mandatory. Each agent should then have an explicit tool allowlist, data scope, action boundary, approval owner and audit trail.
+
+
 
 ## Shadow AI Audit
 
@@ -66,3 +104,9 @@ Therefore, the current compounding architecture needs to be described as 1 emerg
 **Total tools found:**
 **Tools after triage:**
 **Estimated hidden spend:**
+
+
+
+<!-- Governance Policy, AI Assistant -->
+
+
