@@ -39,6 +39,11 @@ Therefore, the current compounding architecture needs to be described as 1 emerg
 ## Context Connectivity
 <!-- How does knowledge flow across teams and domains? Where does it silo? -->
 
+**How knowledge flows:** Through shared MyCF data/services, common AI architecture and cross-functional Product–Engineering–Data Science work; reusable retrieval, prompting and eval improvements can propagate across fleet domains.
+
+**Where it silos:** Customer feedback, corrections, failure patterns and domain expertise remain fragmented across teams and use cases, with no systematic mechanism to turn them into reusable context.
+
+
 ## Governance Policy
 
 **Scope:**
