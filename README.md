@@ -37,7 +37,7 @@
 
 **Why this won't get copied in 6 months.**
 
-- **Data Flywheel Score:**
+- **Data Flywheel Score:** 11/20
 - **Weakest Loop:** Preferences Loop scored lowest (2/5). That is where a competitor will probe first, shore up capture, feedback, or proprietary data there before we scale distribution.
 - **Top Encroachment Threat:** OpenAI
 - **Encroachment Defense:** ---
