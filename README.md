@@ -55,7 +55,7 @@
 - **Gross Margin (AI-adjusted):** 2%
 - **Pricing Model:** platform entitlement for core AI capabilities, with premium/usage-based economics for advanced or unusually compute-intensive capabilities.
 - **Pricing Today → Tomorrow:** AI Assistant is embedded within the existing MyCF proposition rather than monetised as a standalone AI SKU. → Initially retain AI Assistant within the core MyCF proposition to accelerate adoption and prove measurable retention and engagement value. Introduce premium pricing only for advanced/high-cost capabilities or materially higher usage tiers once willingness-to-pay and incremental customer value are evidenced.
-- **Total AI COGS / unit:**
+- **Total AI COGS / unit:** £10.40
 - **Cascading Strategy:** Triage: Lower-cost, lower-latency model for intent classification, straightforward retrieval and routine operational questions.; frontier: Higher-capability model reserved for complex reasoning, multi-source synthesis, ambiguous queries and requests requiring stronger contextual interpretation.; ratio 60% triage / 40% frontier, with a target to progressively increase the proportion safely handled by lower-cost models as routing and evaluation maturity improve.
 - **Net Margin Shift:** −4.8 percentage points of gross margin, or £2.40 incremental COGS/user/month.
 - **Break-even at:**
