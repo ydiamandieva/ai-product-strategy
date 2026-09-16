@@ -99,11 +99,11 @@
 
 **How you get this funded, shipped, and adopted.**
 
-- **Horizon 1 (Now):**
-- **Horizon 2 (Next):**
-- **Horizon 3 (Bet):**
-- **Board Narrative:** **The case:**
-- **Ask:** ## M1 Baseline vs. Now
+- **Horizon 1 (Now):** Trusted conversational answers across core MyCF fleet data, with evidence/source grounding and confidence UX · Drive repeat operational usage, instrumenting the core question → answer → action journey and capturing corrections/feedback
+- **Horizon 2 (Next):** Proactive operational insights and recommended actions — surface exceptions, risks and opportunities rather than waiting for a prompt · Cross-workflow integration and deeper domain capability, including HGV-specific workflows and approved third-party data where it materially improves decisions
+- **Horizon 3 (Bet):** Agentic Fleet Copilot — proactively identifies operational issues, recommends actions and executes bounded, reversible workflows with human approval where required
+- **Board Narrative:** We are turning MyCF's proprietary fleet data into a trusted operational copilot that moves fleet managers from finding information, to understanding what matters, to taking action — making MyCF progressively more embedded in daily fleet decision-making.
+- **Ask:** Fund the roadmap in evidence-gated horizons: prove trusted repeat usage in H1, release investment into proactive workflows when H1 thresholds are met, and fund agentic execution only when H2 demonstrates measurable operational action and re…
 - **Key Strategic Change:**
 
 → Details: [`06-the-pitch/`](06-the-pitch/)
