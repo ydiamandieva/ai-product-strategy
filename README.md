@@ -41,7 +41,7 @@
 - **Weakest Loop:** Preferences Loop scored lowest (2/5). That is where a competitor will probe first, shore up capture, feedback, or proprietary data there before we scale distribution.
 - **Top Encroachment Threat:** OpenAI
 - **Encroachment Defense:** Strengthen the flywheel where OpenAI cannot compete: build proprietary fleet intelligence rather than a better chat interface. Invest in customer-specific operational memory, evidence-backed recommendations, closed-loop learning from fleet outcomes, and workflow execution that continuously improves from MyCF's unique telematics data. The objective is to make the AI Assistant indispensable because of what it knows about each fleet, not because of how users converse with it.
-- **Vendor Portability:** _(Partial)_
+- **Vendor Portability:** _Partial_
 
 → Details: [`02-the-moat/`](02-the-moat/)
 
