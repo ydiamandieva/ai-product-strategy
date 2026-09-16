@@ -1,6 +1,6 @@
-# My AI Product Strategy
+# AI Assistant
 
-> A living strategy built across 6 sessions. Each module adds one component. By Module 6, this repo IS your strategy — version-controlled, board-ready, portable.
+> If fleet managers can obtain trusted, evidence-backed operational answers through natural conversation faster than navigating dashboards and reports, they will increasingly rely on the AI Assistant as their primary workflow, improving engagement, retention and long-term customer …
 
 ---
 
@@ -8,12 +8,12 @@
 
 | Component | Module | Status | Key Artifact |
 |-----------|--------|--------|-------------|
-| **The Bet** | M1 | [ ] | `01-the-bet/` |
-| **The Moat** | M2 | [ ] | `02-the-moat/` |
-| **The Margin** | M3 | [ ] | `03-the-margin/` |
-| **The Contract** | M4 | [ ] | `04-the-contract/` |
-| **The Guardrails** | M5 | [ ] | `05-the-guardrails/` |
-| **The Pitch** | M6 | [ ] | `06-the-pitch/` |
+| **The Bet** | M1 | [x] | `01-the-bet/` |
+| **The Moat** | M2 | [x] | `02-the-moat/` |
+| **The Margin** | M3 | [x] | `03-the-margin/` |
+| **The Contract** | M4 | [x] | `04-the-contract/` |
+| **The Guardrails** | M5 | [x] | `05-the-guardrails/` |
+| **The Pitch** | M6 | [x] | `06-the-pitch/` |
 
 ---
 
@@ -21,13 +21,13 @@
 
 **What we're building, for whom, why now.**
 
-- **Product:**
-- **AI Value Archetype:**
-- **Vulnerability Scores:** Moat __/5 · Data __/5 · Platform __/5
-- **Top Risk:**
-- **Confidence:** H / M / L
-- **Prototype:** [link]
-- **Kill Criteria:**
+- **Product:** AI Assistant
+- **AI Value Archetype:** Operational Copilot — an AI assistant that augments fleet managers by interpreting proprietary operational data, prioritising what matters most, and accelerating trusted decision-making.
+- **Vulnerability Scores:** _(add: Moat _/5 · Data _/5 · Platform _/5)_
+- **Top Risk:** The strategic bet fails if conversational interaction does not become the preferred interface for fleet managers' operational decision-making.
+- **Confidence:** H
+- **Prototype:** https://fleet-insight-copilot.lovable.app
+- **Kill Criteria:** Within 6 months of General Availability, fewer than 30% of eligible customers use the AI Assistant weekly, or fewer than 50% of AI interactions result in a follow-up operational action, indicating that conversational AI is not becoming an indispensable workflow and the strategic …
 
 → Details: [`01-the-bet/`](01-the-bet/)
 
@@ -37,11 +37,11 @@
 
 **Why this won't get copied in 6 months.**
 
-- **Data Flywheel Score:** __/20
-- **Weakest Loop:**
-- **Competitive Position:** [describe axes + placement]
-- **Encroachment Defense:**
-- **Vendor Portability:** Ready / Partial / Locked
+- **Data Flywheel Score:**
+- **Weakest Loop:** Preferences Loop scored lowest (2/5). That is where a competitor will probe first, shore up capture, feedback, or proprietary data there before we scale distribution.
+- **Top Encroachment Threat:** OpenAI
+- **Encroachment Defense:** ---
+- **Vendor Portability:** _(add: Ready / Partial / Locked)_
 
 → Details: [`02-the-moat/`](02-the-moat/)
 
@@ -51,10 +51,13 @@
 
 **Will this make money or bleed it?**
 
-- **Gross Margin (current):**
-- **Gross Margin (AI-adjusted):**
-- **Pricing Model:**
-- **Cascading Strategy:**
+- **Gross Margin (current):** 0%
+- **Gross Margin (AI-adjusted):** 2%
+- **Pricing Model:** platform entitlement for core AI capabilities, with premium/usage-based economics for advanced or unusually compute-intensive capabilities.
+- **Pricing Today → Tomorrow:** AI Assistant is embedded within the existing MyCF proposition rather than monetised as a standalone AI SKU. → Initially retain AI Assistant within the core MyCF proposition to accelerate adoption and prove measurable retention and engagement value. Introduce premium pricing only for advanced/high-cost capabilities or materially higher usage tiers once willingness-to-pay and incremental customer value are evidenced.
+- **Total AI COGS / unit:**
+- **Cascading Strategy:** Triage: Lower-cost, lower-latency model for intent classification, straightforward retrieval and routine operational questions.; frontier: Higher-capability model reserved for complex reasoning, multi-source synthesis, ambiguous queries and requests requiring stronger contextual interpretation.; ratio 60% triage / 40% frontier, with a target to progressively increase the proportion safely handled by lower-cost models as routing and evaluation maturity improve.
+- **Net Margin Shift:** −4.8 percentage points of gross margin, or £2.40 incremental COGS/user/month.
 - **Break-even at:**
 
 → Details: [`03-the-margin/`](03-the-margin/)
@@ -65,11 +68,11 @@
 
 **Why users will trust a probabilistic system.**
 
-- **Reliability Target:**
-- **Golden Dataset:** __ rows, __ adversarial
-- **Confidence UX:** [approach]
-- **HITL Architecture:**
-- **Failure Mode Coverage:**
+- **Reliability Target:** ≥92% weekly on the production-representative golden dataset
+- **Golden Dataset:** 15 rows, __ adversarial
+- **Confidence UX:** For the MyCF AI Assistant, I’d combine all three mechanisms: show uncertainty + tiered confidence + human-in-the-loop/escalation triggers.…
+- **HITL Architecture:** **Trigger:** Human review is triggered when confidence falls below the safe-answer threshold, evidence cannot sufficiently support the answer, trusted sources conflict, the request is outside supported scope, access/authorisation is ambiguo…
+- **Failure Mode Coverage:** *What failure mode did your partner find that you missed?*
 
 → Details: [`04-the-contract/`](04-the-contract/)
 
@@ -77,13 +80,16 @@
 
 ## The Guardrails (M5)
 
-**What breaks when this scales — and what compounds.**
+**What breaks when this scales, and what compounds.**
 
-- **Compounding System:** [describe feedback loops]
-- **Governance Posture:** [approach]
-- **Shadow AI Status:** __ tools found, __ triaged
-- **Agent Boundaries:**
-- **Regulatory Exposure:**
+- **Compounding System:** | Loop | Input | Output | Compounds? | Status | |------|-------|--------|-----------|--------| | Recursive Learning | User questions, thumbs up/down, corrections, failed/low-confidence answers, support feedback, eval res…
+- **Governance Posture:** The policy governs the AI Assistant's use of MyCF customer and fleet data to answer authenticated user questions, generate fleet insights and recommendations, retrieve and synthesise authorised information, and explain t…
+- **Autonomy Boundaries:** Answer a standard fleet question using data the authenticated user is authorised to access, auto. Generate non-binding insight or recommendation, auto.…
+- **Escalation Triggers:** The Assistant must fail safely, request clarification, refuse or route to human review when any defined trigger occurs: 1. Confidence <50% or the agreed low-confidence threshold. 2.…
+- **Audit Cadence:** Real-time, Access-control violations, security events, prompt-injection signals, provider/service failures and critical reliability thresholds (Security / Platform Engineering owner).…
+- **Shadow AI Audit (user-side):**
+- **Agent Boundaries:** Not applicable yet.
+- **Regulatory Exposure:** Primary governance should account for GDPR / UK GDPR and Data Protection Act 2018, the EU AI Act where the Assistant falls within its territorial scope, contractual/customer data-processing obligations, information-secur…
 
 → Details: [`05-the-guardrails/`](05-the-guardrails/)
 
@@ -96,7 +102,8 @@
 - **Horizon 1 (Now):**
 - **Horizon 2 (Next):**
 - **Horizon 3 (Bet):**
-- **Board Narrative:** [1-sentence thesis]
-- **Key Metric:**
+- **Board Narrative:** **The case:**
+- **Ask:** ## M1 Baseline vs. Now
+- **Key Strategic Change:**
 
 → Details: [`06-the-pitch/`](06-the-pitch/)
