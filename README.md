@@ -27,7 +27,7 @@
 - **Top Risk:** The strategic bet fails if conversational interaction does not become the preferred interface for fleet managers' operational decision-making.
 - **Confidence:** H
 - **Prototype:** https://fleet-insight-copilot.lovable.app
-- **Kill Criteria:** Within 6 months of General Availability, fewer than 30% of eligible customers use the AI Assistant weekly, or fewer than 50% of AI interactions result in a follow-up operational action, indicating that conversational AI is not becoming an indispensable workflow and the strategic …
+- **Kill Criteria:** Within 6 months of General Availability, fewer than 30% of eligible customers use the AI Assistant weekly, or fewer than 50% of AI interactions result in a follow-up operational action, indicating that conversational AI is not becoming an indispensable workflow and the strategic investment should be reassessed.
 
 → Details: [`01-the-bet/`](01-the-bet/)
 
