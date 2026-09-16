@@ -23,7 +23,7 @@
 
 | Initiative | Metric | Confidence |
 |-----------|--------|-----------|
-| Agentic Fleet Copilot — proactively identifies operational issues, recommends actions and executes bounded, reversible workflows with human approval where required | ≥30% of eligible operational workflows initiated through AI; ≥20% reduction in time-to-resolution; no material unauthorised actions | H / M / L |
+| Agentic Fleet Copilot — proactively identifies operational issues, recommends actions and executes bounded, reversible workflows with human approval where required | ≥30% of eligible operational workflows initiated through AI; ≥20% reduction in time-to-resolution; no material unauthorised actions | L |
 
 ## Board Pitch
 
