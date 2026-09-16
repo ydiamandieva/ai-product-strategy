@@ -23,7 +23,7 @@
 
 - **Product:** AI Assistant
 - **AI Value Archetype:** Operational Copilot — an AI assistant that augments fleet managers by interpreting proprietary operational data, prioritising what matters most, and accelerating trusted decision-making.
-- **Vulnerability Scores:** _(add: Moat 4/5 · Data 5/5 · Platform 4/5)_
+- **Vulnerability Scores:** _(Moat 4/5 · Data 5/5 · Platform 4/5)_
 - **Top Risk:** The strategic bet fails if conversational interaction does not become the preferred interface for fleet managers' operational decision-making.
 - **Confidence:** H
 - **Prototype:** https://fleet-insight-copilot.lovable.app
