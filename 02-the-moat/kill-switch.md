@@ -47,10 +47,11 @@ Overall portability risk: Medium–High.
 The architectural foundations are promising, but the decisive gap is operational proof: until routing and provider-neutral evaluations are automated and rehearsed, multi-provider capability is an option on paper rather than genuine swap readiness.
 
 ## Portability Score
-<-- Partial -->
+**Partial**
+The architecture supports multiple models through AWS Bedrock, GPT-4, LangChain and RAG, but 48-hour portability has not yet been proven through automated routing, provider-neutral evaluations and a rehearsed production failover.
 
-## If [primary vendor] doubles pricing tomorrow:
-<!-- What's your 48-hour response? -->
+## If AWS Bedrock doubles pricing tomorrow:
+Within 48 hours, freeze non-essential high-cost workloads, route priority workflows to the pre-approved secondary provider, and run the golden evaluation suite before progressively redirecting production traffic. Apply temporary model cascading and usage limits while monitoring quality, latency, security and cost, with rollback available through a feature flag.
 
-## If [primary vendor] ships a competing product:
-<!-- What's defensible that they can't replicate? -->
+## If AWS ships a competing product:
+AWS could replicate the underlying models, conversational interface and generic agent orchestration, but not MyCF’s accumulated fleet context: proprietary telematics data, customer-specific operating history, fleet-domain logic, permission model, evidence-backed recommendations and learning from real operational outcomes. The defensible advantage is therefore the trusted fleet-intelligence layer embedded in customer workflows—not the model or chat experience itself.
