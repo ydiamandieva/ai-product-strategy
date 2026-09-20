@@ -8,12 +8,12 @@
 
 | Component | Module | Status | Key Artifact |
 |-----------|--------|--------|-------------|
-| **The Bet** | M1 | [x] | `01-the-bet/` |
-| **The Moat** | M2 | [x] | `02-the-moat/` |
-| **The Margin** | M3 | [x] | `03-the-margin/` |
-| **The Contract** | M4 | [x] | `04-the-contract/` |
-| **The Guardrails** | M5 | [x] | `05-the-guardrails/` |
-| **The Pitch** | M6 | [x] | `06-the-pitch/` |
+| **The Bet** | M1 | done | `01-the-bet/` |
+| **The Moat** | M2 | done | `02-the-moat/` |
+| **The Margin** | M3 | done | `03-the-margin/` |
+| **The Contract** | M4 | done | `04-the-contract/` |
+| **The Guardrails** | M5 | done | `05-the-guardrails/` |
+| **The Pitch** | M6 | done | `06-the-pitch/` |
 
 ---
 
