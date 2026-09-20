@@ -48,6 +48,7 @@ The architectural foundations are promising, but the decisive gap is operational
 
 ## Portability Score
 **Partial**
+
 The architecture supports multiple models through AWS Bedrock, GPT-4, LangChain and RAG, but 48-hour portability has not yet been proven through automated routing, provider-neutral evaluations and a rehearsed production failover.
 
 ## If AWS Bedrock doubles pricing tomorrow:
