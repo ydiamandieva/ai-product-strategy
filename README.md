@@ -82,8 +82,8 @@
 
 **What breaks when this scales, and what compounds.**
 
-|**Compounding System:** | Loop | Input | Output | Compounds? | Status |
-|------|-------|--------|-----------|--------| 
+| Compounding System| Loop | Input | Output | Compounds? | Status |
+|-------------------|------|-------|--------|------------|--------| 
 | **Recursive Learning** | User questions | thumbs up/down, corrections, failed/low-confidence answers, support feedback, eval res… |
 | **Governance Posture:** | The policy governs the AI Assistant's use of MyCF customer and fleet data to answer authenticated user questions, generate fleet insights and recommendations, retrieve and synthesise authorised information, and explain t… |
 | **Autonomy Boundaries:** | Answer a standard fleet question using data the authenticated user is authorised to access, auto. Generate non-binding insight or recommendation, auto.… |
