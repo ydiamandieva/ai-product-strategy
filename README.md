@@ -82,15 +82,16 @@
 
 **What breaks when this scales, and what compounds.**
 
-- **Compounding System:** | Loop | Input | Output | Compounds? | Status |
-- |------|-------|--------|-----------|--------| | Recursive Learning | User questions, thumbs up/down, corrections, failed/low-confidence answers, support feedback, eval res…
-- | **Governance Posture:** | The policy governs the AI Assistant's use of MyCF customer and fleet data to answer authenticated user questions, generate fleet insights and recommendations, retrieve and synthesise authorised information, and explain t…
-- **Autonomy Boundaries:** Answer a standard fleet question using data the authenticated user is authorised to access, auto. Generate non-binding insight or recommendation, auto.…
-- **Escalation Triggers:** The Assistant must fail safely, request clarification, refuse or route to human review when any defined trigger occurs: 1. Confidence <50% or the agreed low-confidence threshold. 2.…
-- **Audit Cadence:** Real-time, Access-control violations, security events, prompt-injection signals, provider/service failures and critical reliability thresholds (Security / Platform Engineering owner).…
-- **Shadow AI Audit (user-side):**
-- **Agent Boundaries:** Not applicable yet.
-- **Regulatory Exposure:** Primary governance should account for GDPR / UK GDPR and Data Protection Act 2018, the EU AI Act where the Assistant falls within its territorial scope, contractual/customer data-processing obligations, information-secur…
+|**Compounding System:** | Loop | Input | Output | Compounds? | Status |
+|------|-------|--------|-----------|--------| 
+| **Recursive Learning** | User questions | thumbs up/down, corrections, failed/low-confidence answers, support feedback, eval res… |
+| **Governance Posture:** | The policy governs the AI Assistant's use of MyCF customer and fleet data to answer authenticated user questions, generate fleet insights and recommendations, retrieve and synthesise authorised information, and explain t… |
+| **Autonomy Boundaries:** | Answer a standard fleet question using data the authenticated user is authorised to access, auto. Generate non-binding insight or recommendation, auto.… |
+| **Escalation Triggers:** | The Assistant must fail safely, request clarification, refuse or route to human review when any defined trigger occurs: 1. Confidence <50% or the agreed low-confidence threshold. 2.… |
+| **Audit Cadence:** | Real-time, Access-control violations, security events, prompt-injection signals, provider/service failures and critical reliability thresholds (Security / Platform Engineering owner).… |
+| **Shadow AI Audit (user-side):** |
+| **Agent Boundaries:** | Not applicable yet.|
+| **Regulatory Exposure:** | Primary governance should account for GDPR / UK GDPR and Data Protection Act 2018, the EU AI Act where the Assistant falls within its territorial scope, contractual/customer data-processing obligations, information-secur… |
 
 → Details: [`05-the-guardrails/`](05-the-guardrails/)
 
