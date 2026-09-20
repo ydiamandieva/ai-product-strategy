@@ -1,7 +1,7 @@
 # Pricing Strategy Block, Module 3
 
 # Pricing Strategy
-- Strategy posture: Penetrate
+Strategy posture: Penetrate
 
 Rationale: Drive broad adoption of the AI Assistant and establish conversational fleet intelligence as a recurring operational workflow before optimising for direct AI monetisation. Maintain margin through aggressive optimisation of inference and infrastructure costs as usage scales.
 
