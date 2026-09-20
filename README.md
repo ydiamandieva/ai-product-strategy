@@ -69,7 +69,7 @@
 **Why users will trust a probabilistic system.**
 
 - **Reliability Target:** ≥92% weekly on the production-representative golden dataset
-- **Golden Dataset:** 15 rows, x adversarial
+- **Golden Dataset:** 15 rows, adversarial — prompt injection, unauthorised data access, ambiguous queries, missing/incomplete data, unsupported causal or predictive claims, invalid vehicle identifiers, stale/unavailable source data, and misleading time-period comparisons.
 - **Confidence UX:** For the MyCF AI Assistant, I’d combine all three mechanisms: show uncertainty + tiered confidence + human-in-the-loop/escalation triggers. The governing principle should be: the lower the confidence, the less authoritative the Assistant becomes and the more control shifts to the user.
 - **HITL Architecture:** **Trigger:** Human review is triggered when confidence falls below the safe-answer threshold, evidence cannot sufficiently support the answer, trusted sources conflict, the request is outside supported scope, access/authorisation is ambiguo…
 - **Failure Mode Coverage:** N/A
