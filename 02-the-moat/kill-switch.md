@@ -47,7 +47,7 @@ Overall portability risk: Medium–High.
 The architectural foundations are promising, but the decisive gap is operational proof: until routing and provider-neutral evaluations are automated and rehearsed, multi-provider capability is an option on paper rather than genuine swap readiness.
 
 ## Portability Score
-<!-- Partial -->
+<-- Partial -->
 
 ## If [primary vendor] doubles pricing tomorrow:
 <!-- What's your 48-hour response? -->
