@@ -30,22 +30,24 @@ Output: Evidence that the team can detect a provider issue, evaluate the alterna
 
 Definition of “48-hour swap ready”
 
-A swap is complete only when the alternative provider:
+- A swap is complete only when the alternative provider:
 
-Requires configuration changes rather than application redevelopment.
+- Requires configuration changes rather than application redevelopment.
 
-Passes the agreed quality, groundedness, security, and permissions thresholds.
+- Passes the agreed quality, groundedness, security, and permissions thresholds.
 
-Has sufficient production quota and contractual approval.
+- Has sufficient production quota and contractual approval.
 
-Supports monitoring, cost attribution, incident response, and rollback.
+- Supports monitoring, cost attribution, incident response, and rollback.
 
-Successfully serves production traffic within 48 hours of the decision to switch.
+- Successfully serves production traffic within 48 hours of the decision to switch.
 
-Overall portability risk: Medium–High. The architectural foundations are promising, but the decisive gap is operational proof: until routing and provider-neutral evaluations are automated and rehearsed, multi-provider capability is an option on paper rather than genuine swap readiness.
+Overall portability risk: Medium–High. 
+
+The architectural foundations are promising, but the decisive gap is operational proof: until routing and provider-neutral evaluations are automated and rehearsed, multi-provider capability is an option on paper rather than genuine swap readiness.
 
 ## Portability Score
-<!-- Ready / Partial / Locked -->
+<!-- Partial -->
 
 ## If [primary vendor] doubles pricing tomorrow:
 <!-- What's your 48-hour response? -->
